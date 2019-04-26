@@ -1,0 +1,38 @@
+#books-main-menu .navbar-brand {
+    padding: 0 15px;
+}
+body.admin-logged-out .logged-in,
+body.admin-logged-in .logged-out{
+    display: none;
+}
+
+body.user-logged-out .logged-in-user,
+body.user-logged-in .logged-out-user {
+    display: none;
+}
+
+body.user-logged-out .welcome-nav {
+    display: none;
+}
+body {
+    margin-bottom: 50px;
+}
+
+/*==========Footer===========*/
+body footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    text-align: right;
+}
+body footer a{
+    color: white;
+}
+
+body footer div{
+    width: 94%;
+    padding: 11px;
+}
+
