@@ -1,0 +1,225 @@
+
+a.book-box {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h5, .description {
+    padding-left: 10px;
+}
+
+.imgSearch {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    min-width: 100px;
+}
+
+#adminSettingsForm {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #43ccb4;
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+}
+
+#adminSettingsh1 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/**
+ * Homepage books
+ */
+.book-box p.description {
+    padding: 0 1em;
+    height: 200px;
+}
+
+.col-sm-9 a.book-box {
+    max-height: 400px;
+    min-width: 100%;
+}
+
+.col-sm-9 .book-box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 138px;
+    height: 198px;
+}
+
+.col-sm-9 .book-box h4, h5 {
+    padding: 0 1em;
+}
+
+/* ============== BOOK DETAILS START ============== */
+.book-details-wrapper span.checked {
+    color: orange;
+}
+
+.book-details-wrapper .book-image {
+    float: left;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.book-details-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: mediumaquamarine;
+}
+
+.book-details-wrapper p {
+    clear: both;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.book-details-wrapper .rating div {
+    font-size: 200%;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.book-details-wrapper p.readMore {
+    text-align: center;
+}
+
+.book-details-wrapper .price {
+    float: right;
+    padding-right: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ============== BOOK DETAILS END ============== */
+
+#editBook {
+    font-size: medium;
+    margin: 10px;
+}
+
+#content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#messages li {
+    padding: 0.5em 1em;
+}
+
+#messages .error {
+    background-color: red;
+}
+
+#messages .status {
+    background-color: green;
+}
+
+#adminDeleteForm {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #43ccb4;
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+}
+
+#deletediv {
+    text-align: center;
+    padding-top: 25px;
+}
+
+#results .author-header,
+#results .category-header {
+    width: 150px;
+}
+
+/* ============== WISH BUTTON ====================*/
+
+.book-details-wrapper button{
+    border-radius: 14px;
+    background-color: white;
+    border: white;
+    color: black;
+    box-shadow: 10px 5px rgba(0,0,0,0.2);
+}
+.book-details-wrapper button:focus {
+    background-color: red;
+}
+
+.user-logged-out #wishBtn,
+.admin-logged-out #wishBtn ,
+.admin-logged-in #wishBtn
+{
+    display: none;
+}
+
+.user-logged-in #wishBtn {
+    display: block;
+}
+/*================User Profile=====================*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.card h4{
+    text-align: left;
+    margin-left: 5px;
+}
+
+.card h1{
+    margin: 30px;
+}
+
+.btnProfile{
+    padding: 0px;
+}
+
+.card .file_upload {
+    display: none;
+}
+.card button{
+    opacity: 0.6;
+    margin-left: 86px;
+    position: absolute;
+    border-radius: 31px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 5px;
+    margin-top: 20px;
+}
+/*======================= Favorite Book ====================*/
+
+.col-sm-12 #messages {
+    padding-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/*====================== Comments ==========================*/
+
+.comment-box{
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color:#43ccb4;
+    border-radius: 4px;
+}

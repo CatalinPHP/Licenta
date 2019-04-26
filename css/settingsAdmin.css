@@ -1,0 +1,105 @@
+/*============admin settings meniu ===========*/
+.settings_sidebar {
+    height: 100%;
+    width: 0;
+    padding-top: 15px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: 0.5s;
+    text-align: center;
+    opacity: 0.9;
+}
+.settings_sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.settings_sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.settings_sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.settings_sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+div.settings_content {
+    padding: 1px 16px;
+    height: 1000px;
+    position: relative;
+}
+
+span.openMenu {
+
+    background: black;
+    color: white;
+    padding: 5px 6px ;
+}
+div.adminApiSettings , .adminUploadBook{
+    display: none;
+}
+
+div.adminUserEdit{
+    display: block;
+}
+/* ======================= uploadBooks ==============*/
+div.uploadBooks {
+    text-align: center;
+    border: 1px solid;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
+div.uploadBooks .btn-default{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====media settings ====*/
+
+@media screen and (max-width: 700px) {
+    .settings_sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .settings_sidebar a {float: left;}
+    div.settings_content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .settings_sidebar a {
+        text-align: center;
+        float: none;
+    }
+    div.settings_content {margin-left: 0;}
+}
