@@ -114,7 +114,7 @@ $(document).ready(function () {
             $.each(users, function (i, user) {
                 $users.append('<tr><th>' + user.username + '</th>' +
                     '<th>' + user.image + '</th>' +
-                    '<th> edit...</th></tr>'
+                    '<th id = "btnAdminUserAction"> <button type="button"><a href="/admin/user/delete/\' + books[i][\'id\'] + \'"target="_blank">Delete</a></button> | <button type="button"><a href="/admin/userEdit"target="_blank">Edit</a></button></th></tr>'
                 );
 
             })

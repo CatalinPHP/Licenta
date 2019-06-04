@@ -1,5 +1,6 @@
 create table comments (
   comid int auto_increment primary key,
+  idBook int,
   username varchar(40),
   date datetime ,
   comment text
@@ -65,12 +66,13 @@ CREATE TABLE users (
   user_id INT(11) NOT NULL AUTO_INCREMENT,
   username VARCHAR(40) NULL,
   password VARCHAR(32) NULL DEFAULT NULL,
+  image int,
   PRIMARY KEY (`user_id`),
   UNIQUE (username)
 );
 
 create table wish_books(
-  user_id INT not null ,
-  ISBN_13 varchar(13),
+  id_user INT not null ,
+  book_title varchar(13),
   PRIMARY key (user_id , ISBN_13)
 );

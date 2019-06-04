@@ -188,8 +188,8 @@ class AdminDashboardController extends BasicController
     $bookFetcher = new BooksFetcher();
     $bookFetcher->InsertBooks($title, $author, $category);
     $message = $bookFetcher->getMessages();
-    $this->messages = $message;
-    $this->renderLayout('/views/layouts/basic.tpl.php');
+    $this->content = $this->render('/views/forms/admin_settings_form.tpl.php', array('id' => $message));
+    $this->renderLayout('/views/layouts/sidebar_page.tpl.php');
   }
 
 }

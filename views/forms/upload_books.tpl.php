@@ -1,11 +1,27 @@
 <div class="uploadBooks">
+    <div>
+        <h2>Upload books</h2>
+    </div>
     <form method="post" action="/importBooks">
-        <h2>Titlu</h2>
-        <input type="text" name="title">
-        <h2>Autor</h2>
-        <input type="text" name="author">
-        <h2>Categorie</h2>
-        <input type="text" name="category"> <br>
-        <button type="submit" class="btn-default" value="submit">Get books</button>
+        <div class="form-group">
+            <label>Titlu</label>
+            <input type="text" class="form-control" name="title">
+        </div>
+
+        <div class="form-group">
+            <label>Autor</label>
+            <input type="text" class="form-control" name="author">
+        </div>
+
+
+        <div class="form-group">
+            <label for="uri">Categorie</label>
+            <input type="text" class="form-control" name="category"> <br>
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-default" name="action" value="Upload">
+        </div>
     </form>
 </div>

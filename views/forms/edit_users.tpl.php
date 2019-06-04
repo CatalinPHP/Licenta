@@ -1,4 +1,4 @@
-<div class="col-sm-offset-3" id="databaseUsers">
+<div class="col-sm-offset-2 col-sm-9" id="databaseUsers">
     <table class="table table-bordered">
         <thead>
         <tr>

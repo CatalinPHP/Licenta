@@ -17,6 +17,14 @@ body.user-logged-out .welcome-nav {
 body {
     margin-bottom: 50px;
 }
+body form.commentBox{
+    display: none;
+}
+
+body.admin-logged-in form.commentBox ,
+body.user-logged-in form.commentBox{
+    display: flex;
+}
 
 /*==========Footer===========*/
 body footer{

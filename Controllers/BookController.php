@@ -12,6 +12,7 @@ namespace Controllers;
 use Entities\CommentEntity;
 use Models\BookModel;
 use Models\CommentModel;
+use Models\Config;
 use Models\TermModel;
 
 class BookController extends BasicController
@@ -143,6 +144,13 @@ class BookController extends BasicController
     }
     $commentAria .= "</div>";
     return $commentAria;
+
+  }
+
+  public function getLatestBooksUpload(){
+    $config = new Config();
+    $lastIsbn_13 = $config->get('first_of_latest_upload_books_ISBN_13');
+
 
   }
 

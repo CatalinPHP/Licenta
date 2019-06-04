@@ -7,12 +7,13 @@ use  atk4\core\Exception;
 use Entities\BookEntity;
 use Entities\TermEntity;
 use Models\BookModel;
+use Models\Config;
 use Models\TermModel;
 
 class BooksFetcher
 {
   private $messages = "";
-
+  private $latestISBN_13_exist = false;
   /**
    * Make request to external API.
    *
@@ -182,6 +183,17 @@ class BooksFetcher
     $booksFetcher = new BooksFetcher();
     $bookModel = new BookModel();
     $booksRawData = $booksFetcher->getApiBooks($title, $author, $category);
+    $iter = 0;
+    while(!$this->latestISBN_13_exist){
+      if($booksRawData[$iter]['ISBN_13'] != NULL){
+        $this->latestISBN_13_exist = true;
+        $config = new Config();
+        $config->set("first_of_latest_upload_books_ISBN_13" , $booksRawData[$iter]['ISBN_13']);
+        break;
+      }
+      else
+        $iter++;
+    }
     $this->messages = $booksFetcher->messages;
     $vids = array(
       'categories' => $termModel->getVocabularyId('categories'),

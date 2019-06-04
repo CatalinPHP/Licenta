@@ -28,4 +28,8 @@
       <?php include_once "upload_books.tpl.php" ?>
 
     </div>
+
+    <div class="form adminLatestBooks">
+        <p>soon will be update</p>
+    </div>
 </div>

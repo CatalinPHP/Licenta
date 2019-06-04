@@ -8,7 +8,6 @@
     left: 0;
     background-color: #f1f1f1;
     position: fixed;
-    height: 100%;
     overflow: auto;
     transition: 0.5s;
     text-align: center;
@@ -51,7 +50,7 @@ span.openMenu {
     color: white;
     padding: 5px 6px ;
 }
-div.adminApiSettings , .adminUploadBook{
+div.adminApiSettings , .adminUploadBook , .adminLatestBooks{
     display: none;
 }
 
@@ -62,27 +61,11 @@ div.adminUserEdit{
 div.uploadBooks {
     text-align: center;
     border: 1px solid;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 20px;
+    border-radius: 30px;
 }
-div.uploadBooks .btn-default{
-    float: right;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ====media settings ====*/
 
@@ -103,3 +86,11 @@ div.uploadBooks .btn-default{
     }
     div.settings_content {margin-left: 0;}
 }
+
+/* =======admin edit user =============== */
+th#btnAdminUserAction {
+    display: flex;
+    justify-content: center;
+}
+
+col-sm-

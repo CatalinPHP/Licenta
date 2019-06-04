@@ -408,4 +408,11 @@ class BookModel extends BasicModel
     return $result;
 
   }
+
+  public function latestBooks($ISBN_13){
+
+    $query = $this->db2->dsql();
+    $result = $query->table('books')
+      ->field('title');
+  }
 }
